@@ -31,9 +31,9 @@ A `transaction` in DBMS refers to a sequence of operations performed as a single
 
 ## 1. `Atomicity` - "All or Nothing"
 ---
-Atomicity guarantees that all of the commands that make up a transaction are treated as a single unit and either succeed or fail together. 
+* Atomicity guarantees that all of the commands that make up a transaction are treated as a single unit and either succeed or fail together. 
 
-This is important in the event of a system failure or power outage, in that if a transaction wasn't completely processed, it will be discarded and the database maintains its data integrity.
+* This is important in the event of a system failure or power outage, in that if a transaction wasn't completely processed, it will be discarded and the database maintains its data integrity.
 
 > This not only `reduces the chances of storing duplicate data` but also improves the overall efficiency of the database.
 
@@ -57,7 +57,7 @@ This is important in the event of a system failure or power outage, in that if a
 
 ## 3. Isolation for ensuring concurrent transactions don't interfere with each other
 
-It ensures that `multiple transactions can occur concurrently` without leading to the inconsistency of the database state. 
+* It ensures that `multiple transactions can occur concurrently` without leading to the inconsistency of the database state. 
 
 * `Transactions occur independently` without interference. 
 
